@@ -43,13 +43,13 @@ CREATE TABLE METODO_PAGAMENTO (
 
 CREATE TABLE HOTEL (
     id_hotel INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    telefone_hotel NOT NULL VARCHAR (15),
-    estado_hotel NOT NULL VARCHAR (15),
-    cidade_hotel NOT NULL VARCHAR (15),
-    endereco_hotel NOT NULL VARCHAR(50)
+    telefone_hotel  VARCHAR (15) NOT NULL,
+    estado_hotel  VARCHAR (15) NOT NULL,
+    cidade_hotel VARCHAR (15) NOT NULL,
+    endereco_hotel VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE VALOR (
     id_valor INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    valor MONEY 
+    valor DECIMAL
 );
